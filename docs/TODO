@@ -1,19 +1,18 @@
-Todo: Remove user and auth.login, login form and auth.logout from nav and move to user.
-Todo: Rebuild components? https://gist.github.com/insin/bbf116e8ea10ef38447b
-Todo: Nicer error messages
-Todo: Why does a component run three times?
-
-
-
-Done
-- Form error handling
-- Refactor Menu Component in Auth? -> Done, is now NAV
-- Refactor Auth; it's now at 3 places -> Done
-- Is having App + Root Container really necessary? -> Done
-- Refactor data-container to generic component - > Done
-- JSON.Stringify in fetch lib
-- Login django + session/JWT or something
-- Poor error handling: 500/ 403/ 404 and next? -> Added ERROR_[response], now redux + component can be implemented
+Todo: Refactor naar Page Component:
+* Page Title (set pagetitle action verplaatsen)
+* Messages (success, error, warning), Refactor van Error component en ant messages (die laatste is kut)
+* Nav state (MainNavHelper)
+* BreadCrumbs
+* Error handling (404, 500, Etc)
+* Auth (zit nu in nav component)
+Todo: Spin dubbel in beeld soms (Geen idee)
+Todo: Messages overlappen ipv onder elkaar. > Refactor naar Error component ipv ant
+Todo: Splitten van alle detail views naar components ipv index. (Testbaarheid etc)
+Todo: Content component refactoren naar iets meer generiek ipv copy/paste (?)
+Todo: Error and APIerror are a mess in the reducers (error is reserved for reduxform, so…. )
+Todo: Refactor User en Auth naar hetzelfde (-> Onder page component? )
+Todo: 400 Response afhandelen ook buiten redux-form
+Todo: Bij 403 Response zou het login-form getoond moeten worden (invalid token)
 
 
 

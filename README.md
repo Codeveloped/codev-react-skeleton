@@ -1,4 +1,6 @@
-# Installation and Running #
+# React skeleton build on: Ant Design, Redux & Redux form #
+
+A skeleton for rapid development of admin-environments
 
 ## Environment running ##
 
