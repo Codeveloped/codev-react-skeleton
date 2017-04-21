@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    # Your server name (patch your hostfile)
+    server_name ah.codeveloped.local;
+    # Path to project
+    root /<project folder>/web/react/;
+
+    location /api {
+        proxy_pass http://127.0.0.1:8000;
+    }
+
+    location /sockjs-node {
+        proxy_pass http://127.0.0.1:3000;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+    }
+
+}

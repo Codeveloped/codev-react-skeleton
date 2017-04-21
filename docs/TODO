@@ -1,0 +1,19 @@
+Todo: Remove user and auth.login, login form and auth.logout from nav and move to user.
+Todo: Rebuild components? https://gist.github.com/insin/bbf116e8ea10ef38447b
+Todo: Nicer error messages
+Todo: Why does a component run three times?
+
+
+
+Done
+- Form error handling
+- Refactor Menu Component in Auth? -> Done, is now NAV
+- Refactor Auth; it's now at 3 places -> Done
+- Is having App + Root Container really necessary? -> Done
+- Refactor data-container to generic component - > Done
+- JSON.Stringify in fetch lib
+- Login django + session/JWT or something
+- Poor error handling: 500/ 403/ 404 and next? -> Added ERROR_[response], now redux + component can be implemented
+
+
+

@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  nginx:
+    build: docker/nginx-${NODE_ENV}/
+    network_mode: "host"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./web/react/:/html/
